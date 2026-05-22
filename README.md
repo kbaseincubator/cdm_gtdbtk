@@ -12,7 +12,7 @@ Published to `ghcr.io/kbaseincubator/cdm_gtdbtk`.
 
 **Reference data:** Required, ~110 GB. CTS mounts the GTDB-Tk R232 bundle at `/ref_data`. The image bakes `GTDBTK_DATA_PATH=/ref_data` so callers do NOT need to set it themselves. The unpacked layout under `/ref_data` follows the upstream GTDB-Tk DB structure (`split/`, `pplacer/`, `markers/`, `mash/`, `radii/`, etc.).
 
-Single image (not split into siblings) because gtdbtk always needs the GTDB reference DB. There is no useful "without refdata" mode. See the `cdm_tool_skeleton` README section on when to split tools for the design rationale.
+Single image (not split into variants) because gtdbtk always needs the GTDB reference DB. There is no useful "without refdata" mode. See the `cdm_tool_skeleton` README section on when to split tools for the design rationale.
 
 ## Usage via CTS
 
